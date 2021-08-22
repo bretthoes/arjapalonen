@@ -1,0 +1,144 @@
+/* Universal */
+.section-container {
+    max-width: 1600px;
+    margin-top: 60px;
+}
+.fade-in {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+/* Universal */
+
+/* Nav Styles */
+.nav-item {
+    padding: 12px 14px 0px 4px;
+}
+.brand {
+    padding: 16px 12px 4px 4px;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #898989 !important;
+}
+.brand:hover {
+    color: black !important;
+    transition: 1s ease;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black !important;
+}
+.nav-link:hover {
+    color: #898989 !important;
+    transition: 0.25s ease;
+}
+.navbar-brand-mobile:hover {
+    text-decoration: none;
+}
+@media screen and (min-width: 992px) {
+    .navbar-brand-mobile {
+        display: none;
+        visibility: hidden;
+    }
+    .navbar-brand-mobile:hover {
+        color: black !important;
+        transition: 1s ease;
+    }
+}
+@media screen and (max-width: 992px) {
+    .brand-dropdown {
+        display: none;
+    }
+}
+/* Nav Styles */
+
+/* Header */
+.header-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 56px;
+    padding-top: 24px;
+}
+.gallery-button-container {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.gallery-button {
+    background-color: white;
+    border: 2px solid black;
+    width: 210px;
+    height: 50px;
+    text-transform: uppercase;
+}.gallery-button:hover {
+    color: white;
+    background-color: black;
+    transition: 1s ease;
+}
+/* Header */
+
+/* Contact */
+.feather-icon {
+    width: 36px;
+    height: 36px;
+}
+.contact-links {
+    margin: auto;
+    text-align: center;
+    padding-top: 32px;
+}
+.contact-links > div > a {
+    color: darkslategray;
+}
+.contact-links > div > a:hover {
+    text-decoration: none;
+    color: #898989;
+}
+/* Contact */
+
+/* Text */
+.body-text {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+/* Text */
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+    padding-top: 8px;
+}
+.footer p {
+    color: #898989;
+}
+/* Footer */
