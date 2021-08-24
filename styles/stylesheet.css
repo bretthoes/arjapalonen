@@ -78,6 +78,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 480px) {
+    .brand {
+        font-size: 24px;
+    } 
+}
 /* Nav Styles */
 
 /* Header */
@@ -122,6 +127,7 @@
 .contact-links > div > a:hover {
     text-decoration: none;
     color: #898989;
+    transition: 0.25s ease;
 }
 /* Contact */
 
