@@ -34,7 +34,15 @@
     0% {opacity:0;}
     100% {opacity:1;}
   }
-/* Universal */
+  .separator {
+      text-align: center;
+      padding: 24px 0;
+      font-size: 48px;
+  }
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* /Universal */
 
 /* Nav Styles */
 .nav-item {
@@ -83,12 +91,9 @@
         font-size: 24px;
     } 
 }
-/* Nav Styles */
+/* /Nav Styles */
 
 /* Header */
-.header-img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .header-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 56px;
@@ -109,7 +114,7 @@
     background-color: black;
     transition: 1s ease;
 }
-/* Header */
+/* /Header */
 
 /* Contact */
 .feather-icon {
@@ -129,7 +134,7 @@
     color: #898989;
     transition: 0.25s ease;
 }
-/* Contact */
+/* /Contact */
 
 /* Text */
 .body-text {
@@ -137,7 +142,82 @@
     margin: auto;
     font-size: 20px;
 }
-/* Text */
+/* /Text */
+
+/* Paintings */
+.painting {
+    box-sizing: border-box;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.caption {
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+    font-style: italic;
+    color: #4d4d4d;
+}
+.painting-container {
+    box-sizing: border-box;
+}
+.painting-container > a {
+    color: black;
+}
+.painting-container > a:hover {
+    text-decoration: none;
+    color: black;
+}
+.painting-container > figure > a > img:hover {
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+.painting-link:hover .middle {
+opacity: 0.8;
+}
+.painting-link:hover .middle:hover {
+    opacity: 0.7;
+    transition: 0.5s ease;
+}
+.text {
+    background-color: #F3F3F3;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.middle {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+}
+.lightbox:target {
+    display: block;
+}
+.lightbox span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* /Paintings */
 
 /* Footer */
 .footer {
@@ -147,4 +227,4 @@
 .footer p {
     color: #898989;
 }
-/* Footer */
+/* /Footer */

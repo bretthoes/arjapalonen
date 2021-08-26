@@ -1,4 +1,9 @@
 (function () {
+    if (!('indexedDB' in window)) {
+        console.warn('IndexedDB not supported')
+        return
+    }
+
     let db;
     let dbReq = indexedDB.open('dbf', 1);
     dbReq.onupgradeneeded = function (event) {
@@ -8,7 +13,8 @@
         // Create an object store named paintings. Object stores
         // in databases are where data are stored.
         let paintings = db.createObjectStore('paintings', {
-            keyPath: 'id', autoIncrement: false
+            keyPath: 'id',
+            autoIncrement: false
         });
         paintings.createIndex("painterName", "painter", {
             unique: false
@@ -127,7 +133,8 @@ function getJsonArray(json) {
                 height: item.height,
                 width: item.width,
                 frameHeight: item.frameHeight,
-                frameWidth: item.frameWidth
+                frameWidth: item.frameWidth,
+                sold: item.sold
             });
         }
     }
@@ -143,7 +150,8 @@ const data = [{
     height: 20,
     width: 24,
     frameHeight: 26,
-    frameWidth: 30
+    frameWidth: 30,
+    sold: "no"
 }, {
     id: 2,
     title: "Fall Reflections",
@@ -154,5 +162,10 @@ const data = [{
     height: 18,
     width: 24,
     frameHeight: 24,
-    frameWidth: 30
+    frameWidth: 30,
+    sold: "no"
 }]
+
+// const arjaPaintings = [];
+// const joePaintings = [];
+// const miscPaintings = [];
