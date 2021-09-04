@@ -1,4 +1,8 @@
 /* Universal */
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
 .section-container {
     max-width: 1600px;
     margin-top: 60px;
@@ -142,6 +146,11 @@
     margin: auto;
     font-size: 20px;
 }
+.body-header {
+    text-align: center;
+    margin: auto;
+    font-size: 32px;
+}
 /* /Text */
 
 /* Paintings */
@@ -230,3 +239,22 @@ opacity: 0.8;
     color: #898989;
 }
 /* /Footer */
+
+/* Other */
+.page-header {
+    text-align: left;
+    font-size: 32px;
+    padding: 12px;
+}
+.page-sub-header {
+    text-align: left;
+    font-style: italic;
+    color: #898989;
+    font-size: 28px;
+    padding: 12px;
+}
+.body-text-left {
+    text-align: left;
+    font-size: 20px;
+}
+/* /Other */
