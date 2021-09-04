@@ -63,10 +63,15 @@
   <!-- /Text -->
 
   <!-- Misc Paintings  -->
-  <div class="container-fluid section-container" id="gallery">
+  <div class="container-fluid section-container">
     <h1 class="separator">***</h1>
-    <h2 class="body-header fade-in">Artworks we have accumulated over 30 years!</h2><br />
-    <div class="miscPaintings"></div>
+    <h2 class="body-header fade-in">Artworks we have accumulated over 30 years!
+      <button type="button" class="btn btn-light " data-toggle="collapse" 
+      data-target=".miscPaintings" style="float: right;"> 
+      <i class="feather-icon collapse-button-misc" data-feather="chevron-down"></i>
+      <i class="feather-icon collapse-button-misc" data-feather="chevron-up" style="display: none;"></i>
+      </button></h2><br />
+    <div class="miscPaintings paintings collapse show"></div>
   </div>
   <!-- /Misc Paintings -->
 

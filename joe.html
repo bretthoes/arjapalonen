@@ -49,6 +49,7 @@
 
   <!-- Text -->
   <div class="container-fluid section-container">
+    <img class="fade-in" src="img/JoeatStudio.jpg" alt="Joe Kurek at studio" width="500px"  style="margin:auto;display: block;"/>
     <h1 class="page-header">Joseph Kurek<br /><span class="page-sub-header">American Artist</span></h1>
     <p class="body-text-left fade-in" style="text-align: right;"><a href="#gallery">Jump to artwork</a></p>
     <div class="alert alert-success fade-in">
@@ -118,10 +119,15 @@
   <!-- /Text -->
 
   <!-- Joe's Paintings  -->
-  <div class="container-fluid section-container" id="gallery">
+  <div class="container-fluid section-container">
     <h1 class="separator">***</h1>
-    <h2 class="body-header fade-in">Paintings by Joe Kurek (Saxxy):</h2><br />
-    <div class="joesPaintings"></div>
+    <h2 class="body-header fade-in">Paintings by Joe Kurek (Saxxy):
+      <button type="button" class="btn btn-light" data-toggle="collapse" 
+      data-target=".joesPaintings" style="float: right;"> 
+      <i class="feather-icon collapse-button-joe" data-feather="chevron-down"></i>
+      <i class="feather-icon collapse-button-joe" data-feather="chevron-up" style="display: none;"></i>
+      </button></h2><br />
+    <div class="joesPaintings paintings collapse show"></div>
   </div>
   <!-- /Joe's Paintings -->
 

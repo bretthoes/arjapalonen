@@ -143,6 +143,31 @@ $(document).ready(function () {
             $(".miscPaintings").append('</div>')
         }
     })
+
+    // Collapse button togglers
+    $(document).on('shown.bs.collapse', '.arjasPaintings', function (e) {
+        $(':parent h2 button .collapse-button-arja').toggle();
+    })
+
+    $(document).on('hidden.bs.collapse', '.arjasPaintings', function (e) {
+        $(':parent h2 button .collapse-button-arja').toggle();
+    })
+
+    $(document).on('shown.bs.collapse', '.joesPaintings', function (e) {
+        $(':parent h2 button .collapse-button-joe').toggle();
+    })
+
+    $(document).on('hidden.bs.collapse', '.joesPaintings', function (e) {
+        $(':parent h2 button .collapse-button-joe').toggle();
+    })
+
+    $(document).on('shown.bs.collapse', '.miscPaintings', function (e) {
+        $(':parent h2 button .collapse-button-misc').toggle();
+    })
+
+    $(document).on('hidden.bs.collapse', '.miscPaintings', function (e) {
+        $(':parent h2 button .collapse-button-misc').toggle();
+    })
 })
 
 const ROW_AMOUNT = 3;
@@ -1487,8 +1512,7 @@ const joesPaintings = [{
     }
 ]
 
-const miscPaintings = [
-    {
+const miscPaintings = [{
         id: 1,
         category: "Misc",
         title: "At the Beach",

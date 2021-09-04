@@ -49,6 +49,7 @@
 
   <!-- Text -->
   <div class="container-fluid section-container">
+    <img class="fade-in" src="img/ArjaatStudio_header.jpg" alt="Arja Palonen at studio" width="500px" style="margin:auto;display: block;"/>
     <h1 class="page-header">Arja Palonen
       <br /><span class="page-sub-header">Canadian Artist</span></h1>
     <p class="body-text-left fade-in" style="text-align: right;"><a href="#gallery">Jump to artwork</a></p>
@@ -84,9 +85,13 @@
 
   <!-- Arja's Paintings  -->
   <div class="container-fluid section-container" id="gallery">
-    <h1 class="separator">***</h1>
-    <h2 class="body-header fade-in">Paintings by Arja Palonen:</h2><br />
-    <div class="arjasPaintings"></div>
+    <h2 class="body-header fade-in">Paintings by Arja Palonen:
+      <button type="button" class="btn btn-light " data-toggle="collapse" 
+      data-target=".arjasPaintings" style="float: right;"> 
+      <i class="feather-icon collapse-button-arja" data-feather="chevron-down"></i>
+      <i class="feather-icon collapse-button-arja" data-feather="chevron-up" style="display: none;"></i>
+      </button></h2><br />
+    <div class="arjasPaintings paintings collapse show"></div>
   </div>
   <!-- /Arja's Paintings -->
 
