@@ -1758,7 +1758,7 @@ const miscPaintings = [{
         category: "Misc",
         title: "Green Mts Vermont",
         filename: "(M) RON LEONARDS-GREEN MTS VERMONT 22X28, OIL FR 28X34.jpg",
-        price: "$XXX.00",
+        price: "$825.00",
         painter: "Ron Leonard",
         material: "Oil",
         height: 22,
