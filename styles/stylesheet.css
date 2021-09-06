@@ -273,4 +273,24 @@ opacity: 0.8;
 .blurb-header {
     font-weight: 600;
 }
+.load-more {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    border: 1px solid lightgray;
+    background-color: #F7F7F7;
+    color: black;
+    width: fit-content;
+    font-size: 18px;
+}
+.load-more:hover {
+    text-decoration: none;
+    font-style: none;
+    color: black;
+    background-color: #E2E6EA;
+    transition: 0.25s ease;
+}
 /* /Other */
