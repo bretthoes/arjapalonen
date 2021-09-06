@@ -153,6 +153,33 @@
     margin: auto;
     font-size: 28px;
 }
+.page-header {
+    text-align: left;
+    font-size: 32px;
+    padding: 12px;
+}
+.page-sub-header {
+    text-align: left;
+    font-style: italic;
+    color: #898989;
+    font-size: 28px;
+    padding: 12px;
+}
+.body-text-left {
+    text-align: left;
+    font-size: 20px;
+}
+.index-blurbs > div {
+    padding: 24px;
+    border: 1px solid lightgray;
+    background-color: #F7F7F7;
+}
+.index-blurbs {
+    margin: auto;
+}
+.blurb-header {
+    font-weight: 600;
+}
 /* /Text */
 
 /* Paintings */
@@ -233,6 +260,26 @@ opacity: 0.8;
 .btn-light {
     border: 1px solid #d3d3d3 !important; /* Overridden Bootstrap */
 }
+.load-more {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    border: 1px solid lightgray;
+    background-color: #F7F7F7;
+    color: black;
+    width: 100%;
+    font-size: 18px;
+}
+.load-more:hover {
+    text-decoration: none;
+    font-style: none;
+    color: black;
+    background-color: #E2E6EA;
+    transition: 0.25s ease;
+}
 /* /Paintings */
 
 /* Footer */
@@ -244,53 +291,3 @@ opacity: 0.8;
     color: #898989;
 }
 /* /Footer */
-
-/* Other */
-.page-header {
-    text-align: left;
-    font-size: 32px;
-    padding: 12px;
-}
-.page-sub-header {
-    text-align: left;
-    font-style: italic;
-    color: #898989;
-    font-size: 28px;
-    padding: 12px;
-}
-.body-text-left {
-    text-align: left;
-    font-size: 20px;
-}
-.index-blurbs > div {
-    padding: 24px;
-    border: 1px solid lightgray;
-    background-color: #F7F7F7;
-}
-.index-blurbs {
-    margin: auto;
-}
-.blurb-header {
-    font-weight: 600;
-}
-.load-more {
-    margin: auto;
-    display: block;
-    text-align: center;
-    padding: 16px;
-    margin-top: 16px;
-    text-transform: uppercase;
-    border: 1px solid lightgray;
-    background-color: #F7F7F7;
-    color: black;
-    width: fit-content;
-    font-size: 18px;
-}
-.load-more:hover {
-    text-decoration: none;
-    font-style: none;
-    color: black;
-    background-color: #E2E6EA;
-    transition: 0.25s ease;
-}
-/* /Other */
