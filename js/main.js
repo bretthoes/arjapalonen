@@ -64,7 +64,7 @@ function loadPaintings(paintings) {
             default:
                 $(".row" + category + rowNumber).append(
                     '<div class="col-sm-12 col-md-4 painting-container"><figure><a target="_blank" href="img/paintings/' +
-                    painter + '/' + filename + '" class="painting-link">' +
+                    category + '/' + filename + '" class="painting-link">' +
                     '<img class="painting" src="img/paintings/' + category + '/' + filename + '" loading="lazy" alt="' + title +
                     '"><div class="middle"><div class="text">Preview</div></div></a><figcaption class="caption">"' + title +
                     '"<br />' + price + '<br />' + material + '&nbsp;&nbsp;&#183;&nbsp;&nbsp;' + height + ' x ' + width +
@@ -105,7 +105,7 @@ function generateLoadMoreHandlers(item, index) {
         e.preventDefault();
         $(".row" + item.category + ":hidden").slice(0, 2).slideDown();
         if ($(".row" + item.category + ":hidden").length == 0) {
-            $("#load").fadeOut('slow');
+            $("#load-more-" + item.category).fadeOut('slow');
         }
         $('html,body').animate({
             scrollTop: $(this).offset().top
