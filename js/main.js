@@ -1,18 +1,22 @@
 $(function () {
 
-    // Load paintings for each section
-    loadPaintings(arjasPaintings);
-    loadPaintings(joesPaintings);
-    loadPaintings(miscPaintings);
+       // Add all feather icons
+       feather.replace();
 
+    // Load paintings for each section
+    paintings.forEach(loadPaintings);
 
     // 'Collapse' button functionality
     paintings.forEach(generateCollapseHandlers);
 
-
     // 'Load more' button functionality
     paintings.forEach(generateLoadMoreHandlers)
 
+    // Lightbox functionality for all paintings
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 })
 
 // Load paintings 
@@ -57,27 +61,23 @@ function loadPaintings(paintings) {
         switch (category) {
             case 'Misc':
                 $(".row" + category + rowNumber).append(
-                    '<div class="col-sm-12 col-md-4 painting-container"><figure><a target="_blank" href="img/paintings/' +
+                    '<div class="col-sm-12 col-md-4 painting-container"><figure><a data-toggle="lightbox" href="img/paintings/' +
                     category + '/' + filename + '" class="painting-link">' +
                     '<img class="painting" src="img/paintings/' + category + '/' + filename + '" loading="lazy" alt="' + title +
                     '"><div class="middle"><div class="text">Preview</div></div></a><figcaption class="caption">"' + title +
                     '"&nbsp;&nbsp;&#183;&nbsp;&nbsp;' + price + '<br />' + painter + '<br />' + material + '&nbsp;&nbsp;&#183;&nbsp;&nbsp;' + height + ' x ' + width +
                     '&nbsp;&nbsp;&#183;&nbsp;&nbsp;' +
-                    frameMessage + '</figcaption></figure>' +
-                    '<a href="#work" class="lightbox" id="img-' + category + '-' + id + '"><span style="background-image: url(img/paintings/' +
-                    category + '/' + filename + ');"></span></a></div>')
+                    frameMessage + '</figcaption></figure>')
                 break;
             default:
                 $(".row" + category + rowNumber).append(
-                    '<div class="col-sm-12 col-md-4 painting-container"><figure><a target="_blank" href="img/paintings/' +
+                    '<div class="col-sm-12 col-md-4 painting-container"><figure><a data-toggle="lightbox" href="img/paintings/' +
                     category + '/' + filename + '" class="painting-link">' +
                     '<img class="painting" src="img/paintings/' + category + '/' + filename + '" loading="lazy" alt="' + title +
                     '"><div class="middle"><div class="text">Preview</div></div></a><figcaption class="caption">"' + title +
                     '"<br />' + price + '<br />' + material + '&nbsp;&nbsp;&#183;&nbsp;&nbsp;' + height + ' x ' + width +
                     '&nbsp;&nbsp;&#183;&nbsp;&nbsp;' +
-                    frameMessage + '</figcaption></figure>' +
-                    '<a href="#work" class="lightbox" id="img-' + painter + '-' + id + '"><span style="background-image: url(img/paintings/' +
-                    painter + '/' + filename + ');"></span></a></div>')
+                    frameMessage + '</figcaption></figure>')
                 break;
         }
 
@@ -117,9 +117,6 @@ function generateLoadMoreHandlers(item, index) {
         if ($(".row" + item.category + ":hidden").length == 0) {
             $("#load-more-" + item.category).fadeOut('slow');
         }
-        $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 1500);
     });
 }
 
