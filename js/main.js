@@ -1,7 +1,7 @@
 $(function () {
 
-       // Add all feather icons
-       feather.replace();
+    // Add all feather icons
+    feather.replace();
 
     // Load paintings for each section
     paintings.forEach(loadPaintings);
@@ -59,7 +59,7 @@ function loadPaintings(paintings) {
         }
 
         switch (category) {
-            case 'Misc':
+            case 'misc':
                 $(".row" + category + rowNumber).append(
                     '<div class="col-sm-12 col-md-4 painting-container"><figure><a data-toggle="lightbox" href="img/paintings/' +
                     category + '/' + filename + '" class="painting-link">' +
@@ -535,6 +535,19 @@ arjasPaintings.name = 'arjasPaintings';
 arjasPaintings.category = 'arja';
 
 const joesPaintings = [{
+        id: 0,
+        title: "The Bridge",
+        filename: "(J-0) THE BRIDGE 22X28, ACRYLIC $900 28X34 FR.jpg",
+        price: "$900.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 22,
+        width: 28,
+        frameHeight: 28,
+        frameWidth: 34,
+        sold: 0
+    },
+    {
         id: 1,
         title: "Black Rain",
         filename: "(J-1) BLACK RAIN 33X40, ACRYLIC $1,250 FR 39X46.jpg",
@@ -723,7 +736,7 @@ const joesPaintings = [{
         id: 16,
         title: "Foundations",
         filename: "(J-16) FOUNDATIONS 30X36, ACRYLIC $1,150 36X42 FR PAGE 21 MY BOOK.jpg",
-        price: "$250.00",
+        price: "$1,250.00",
         painter: "Joe",
         material: "Acrylic",
         height: 30,
@@ -747,7 +760,7 @@ const joesPaintings = [{
     },
     {
         id: 18,
-        title: "Antique Stone",
+        title: "Antique Store",
         filename: "(J-18) ANTIQUE STORE 30X36, ACRYLIC $1,250 36X42 FR.jpg",
         price: "$1,250.00",
         painter: "Joe",
@@ -1307,7 +1320,7 @@ const joesPaintings = [{
         width: 10,
         frameHeight: 12,
         frameWidth: 14,
-        sold: 0
+        sold: 1
     },
     {
         id: 64,
@@ -1581,6 +1594,119 @@ const joesPaintings = [{
         width: 24,
         frameHeight: 24,
         frameWidth: 30,
+        sold: 0
+    },
+    {
+        id: 86,
+        title: "Peaks and Valleys",
+        filename: "(J-86) PEAKS AND VALLEYS 22X28, ACRYLIC $900 28X34 FR.jpg",
+        price: "$900.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 22,
+        width: 28,
+        frameHeight: 28,
+        frameWidth: 34,
+        sold: 0
+    },
+    {
+        id: 87,
+        title: "Black Magic",
+        filename: "(J-87) BLACK MAGIC 18X14, ABSTRACT $325 24X20 FR.jpg",
+        price: "$325.00",
+        painter: "Joe",
+        material: "Abstract",
+        height: 18,
+        width: 14,
+        frameHeight: 24,
+        frameWidth: 20,
+        sold: 0
+    },
+    {
+        id: 88,
+        title: "Fire Pot",
+        filename: "(J-88) FIRE POT 18X14, ACRYLIC $275 24X20 FR.jpg",
+        price: "$275.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 18,
+        width: 14,
+        frameHeight: 24,
+        frameWidth: 20,
+        sold: 0
+    },
+    {
+        id: 89,
+        title: "Abstract Motivation",
+        filename: "(J-89) ABSTRACT MOTIVATION 9X12,ABSTRACT $135 15X18 FR.jpg",
+        price: "$135.00",
+        painter: "Joe",
+        material: "Abstract",
+        height: 9,
+        width: 12,
+        frameHeight: 15,
+        frameWidth: 18,
+        sold: 0
+    },
+    {
+        id: 90,
+        title: "Peek-A-Boo",
+        filename: "(J-90) PEEK-A-BOO 23X31, ABSTRACT $475 (UF).jpg",
+        price: "$475.00",
+        painter: "Joe",
+        material: "Abstract",
+        height: 23,
+        width: 31,
+        sold: 0
+    },
+    {
+        id: 91,
+        title: "The Fence Gate",
+        filename: "(J-91) THE FENCE GATE 11X14, ACRYLIC $175 17X20 FR.jpg",
+        price: "$175.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 11,
+        width: 14,
+        frameHeight: 17,
+        frameWidth: 20,
+        sold: 0
+    },
+    {
+        id: 92,
+        title: "The Peak",
+        filename: "(J-92) THE PEAK 18X24, ACRYLIC $550 24X30 fr.jpg",
+        price: "$550.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 18,
+        width: 24,
+        frameHeight: 24,
+        frameWidth: 30,
+        sold: 0
+    },
+    {
+        id: 93,
+        title: "Forest Floor",
+        filename: "(J-93) FOREST FLOOR 30X40, ACRYLIC $750 (UF).jpg",
+        price: "$750.00",
+        painter: "Joe",
+        material: "Acrylic",
+        height: 30,
+        width: 40,
+        sold: 0
+    },
+    {
+        id: 94,
+        title: "An Abstract Expression",
+        filename: "(J-94) AN ABSTRACT EXPRESSION 36X30, ABSTRACT $1,200 38X32 FR.jpg",
+        price: "$1,200.00",
+        painter: "Joe",
+        material: "Abstract",
+        height: 36,
+        width: 30,
+        frameHeight: 38,
+        frameWidth: 32,
         sold: 0
     }
 ]
