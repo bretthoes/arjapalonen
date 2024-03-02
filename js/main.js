@@ -164,7 +164,7 @@ const arjasPaintings = [{
         width: 20,
         frameHeight: 22,
         frameWidth: 26,
-        sold: 0
+        sold: 1
     },
     {
         id: 4,
@@ -346,7 +346,7 @@ const arjasPaintings = [{
         width: 18,
         frameHeight: 30,
         frameWidth: 24,
-        sold: 0
+        sold: 1
     },
     {
         id: 18,
@@ -489,7 +489,7 @@ const arjasPaintings = [{
         width: 30,
         frameHeight: 30,
         frameWidth: 36,
-        sold: 0
+        sold: 1
     },
     {
         id: 29,
@@ -1828,7 +1828,7 @@ const miscPaintings = [{
         width: 9,
         frameHeight: 18,
         frameWidth: 15,
-        sold: 0
+        sold: 1
     },
     {
         id: 10,
