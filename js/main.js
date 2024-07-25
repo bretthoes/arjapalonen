@@ -151,7 +151,7 @@ const arjasPaintings = [{
         width: 24,
         frameHeight: 24,
         frameWidth: 30,
-        sold: 0
+        sold: 1
     },
     {
         id: 3,
@@ -190,7 +190,7 @@ const arjasPaintings = [{
         width: 20,
         frameHeight: 30,
         frameWidth: 26,
-        sold: 0
+        sold: 1
     },
     {
         id: 6,
@@ -359,7 +359,7 @@ const arjasPaintings = [{
         width: 24,
         frameHeight: 24,
         frameWidth: 30,
-        sold: 0
+        sold: 1
     },
     {
         id: 19,
@@ -597,7 +597,7 @@ const joesPaintings = [{
         width: 16,
         frameHeight: 12,
         frameWidth: 16,
-        sold: 0
+        sold: 1
     },
     {
         id: 5,
@@ -1724,7 +1724,7 @@ const miscPaintings = [{
         width: 20,
         frameHeight: 22,
         frameWidth: 26,
-        sold: 0
+        sold: 1
     },
     {
         id: 2,
@@ -1737,7 +1737,7 @@ const miscPaintings = [{
         width: 24,
         frameHeight: 26,
         frameWidth: 32,
-        sold: 0
+        sold: 1
     },
     {
         id: 3,
@@ -1763,7 +1763,7 @@ const miscPaintings = [{
         width: 12,
         frameHeight: 16,
         frameWidth: 18,
-        sold: 0
+        sold: 1
     },
     {
         id: 5,
@@ -1802,7 +1802,7 @@ const miscPaintings = [{
         width: 14,
         frameHeight: 16,
         frameWidth: 20,
-        sold: 0
+        sold: 1
     },
     {
         id: 8,
@@ -1866,7 +1866,7 @@ const miscPaintings = [{
         width: 14,
         frameHeight: 16,
         frameWidth: 20,
-        sold: 0
+        sold: 1
     },
     {
         id: 13,
@@ -1926,7 +1926,7 @@ const miscPaintings = [{
         width: 30,
         frameHeight: 30,
         frameWidth: 36,
-        sold: 0
+        sold: 1
     },
     {
         id: 18,
@@ -1939,7 +1939,7 @@ const miscPaintings = [{
         width: 30,
         frameHeight: 30,
         frameWidth: 36,
-        sold: 0
+        sold: 1
     },
     {
         id: 19,
