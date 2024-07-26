@@ -3,6 +3,15 @@ $(function () {
     // Add all feather icons
     feather.replace();
 
+    // filter out sold paintings
+    paintings.forEach((paintingCategory, i) => {
+        paintingCategory.forEach((painting, j) => {
+            if (painting.sold){
+                paintings[i].splice(i, 1);
+            }
+        })
+    })
+
     // Load paintings for each section
     paintings.forEach(loadPaintings);
 
