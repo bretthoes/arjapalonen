@@ -3,13 +3,8 @@ $(function () {
     // Add all feather icons
     feather.replace();
 
-    // Load paintings for each section, filtering out sold paintings
-    paintings.forEach(function(paintingCategory) {
-        var unsoldPaintings = paintingCategory.filter(function(painting) {
-            return painting.sold === 0; // Only include unsold paintings
-        });
-        loadPaintings(unsoldPaintings);
-    });
+    // Load paintings for each section
+    paintings.forEach(loadPaintings);
 
     // 'Collapse' button functionality
     paintings.forEach(generateCollapseHandlers);
@@ -28,8 +23,8 @@ $(function () {
 function loadPaintings(paintings) {
     var name = paintings.name;
     var category = paintings.category;
-    $.each(paintings, function (i, e) {
-        var id = paintings[i].id;
+    
+    $.each(paintings, function (i) {
         var title = paintings[i].title;
         var filename = paintings[i].filename;
         var price = paintings[i].price;
