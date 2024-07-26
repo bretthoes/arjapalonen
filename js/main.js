@@ -3,8 +3,13 @@ $(function () {
     // Add all feather icons
     feather.replace();
 
-    // Load paintings for each section
-    paintings.forEach(loadPaintings);
+    // Load paintings for each section, filtering out sold paintings
+    paintings.forEach(function(paintingCategory) {
+        var unsoldPaintings = paintingCategory.filter(function(painting) {
+            return painting.sold === 0; // Only include unsold paintings
+        });
+        loadPaintings(unsoldPaintings);
+    });
 
     // 'Collapse' button functionality
     paintings.forEach(generateCollapseHandlers);
@@ -1568,7 +1573,7 @@ const joesPaintings = [{
         width: 38,
         frameHeight: 36,
         frameWidth: 44,
-        sold: 0
+        sold: 1
     },
     {
         id: 84,
@@ -1853,7 +1858,7 @@ const miscPaintings = [{
         width: 14,
         frameHeight: 16,
         frameWidth: 20,
-        sold: 0
+        sold: 1
     },
     {
         id: 12,
