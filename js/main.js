@@ -4,13 +4,14 @@ $(function () {
     feather.replace();
 
     // filter out sold paintings
-    paintings.forEach((paintingCategory, i) => {
-        paintingCategory.forEach((painting, j) => {
-            if (painting.sold){
-                paintings[i].splice(i, 1);
+    for (let i = 0; i < paintings.length; i++) {
+        for (let j = 0; j < paintings[i].length; j++) {
+            if (paintings[i][j].sold !== 0) {
+                paintings[i].splice(j, 1);
+                j--; // Adjust index after removal
             }
-        })
-    })
+        }
+    }
 
     // Load paintings for each section
     paintings.forEach(loadPaintings);
